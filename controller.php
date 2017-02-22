@@ -22,7 +22,7 @@ class Controller extends Package {
 
 	protected $pkgHandle = 'tds_enhanced_version_list';
 	protected $appVersionRequired = '5.7.5.9';
-	protected $pkgVersion = '0.1';
+	protected $pkgVersion = '0.9.0';
 
     public function getPackageName() {
 		return t('Enhanced Version List');
