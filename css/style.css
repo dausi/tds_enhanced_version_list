@@ -1,0 +1,69 @@
+/*
+ * for concrete5.7
+ */
+div.ccm-page-selector, div.ccm-summary-selected-item {
+	border-radius: 2px;
+    background-color: #3f9edc;
+    margin: 0 !important;
+    text-align: center;
+    padding: 8px 12px 8px 8px !important;
+}
+div.ccm-page-selector a, div.ccm-summary-selected-item a {
+    color: #ffffff;
+}
+
+#enhanced-version-list-search {
+    margin-bottom: 20px;
+}
+#enhanced-version-list {
+	margin-top: 10px;
+}
+#enhanced-version-list td {
+    font-size: 14px;
+}
+#enhanced-version-list td.data-approved i.fa.fa-exclamation-triangle {
+	color: red;
+}
+#enhanced-version-list .fa-thumbs-up{
+    color: #4CAF50;
+}
+#enhanced-version-list .cursor-help{
+     cursor: help;
+}
+/*
+ * delete checked dialog box
+ */
+#enhanced-version-list-search .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: initial;
+} 
+#enhanced-version-list-search .ui-widget-content .ui-state-default.btn-primary {
+    background: #2076af;
+	border-color: #2076af;
+	color: #fff;
+}
+#enhanced-version-list-search .ui-widget-content .ui-state-default.btn-danger {
+    background: #c9302c;
+    border-color: #c12e2a;
+	color: #fff;
+	float: right;
+}
+#enhanced-version-list-search .ui-button-text-only .ui-button-text {
+	padding: initial;
+}
+/*
+ * progress bar
+ */
+#progressbar {
+	background: #efefef;
+	width: 100%;
+}
+#progress {
+	background-color: #8cf;
+	height: 20px;
+	width: 1%;
+}
+#progress p {
+    padding-left: 5px;
+	width: 450px;
+}
+

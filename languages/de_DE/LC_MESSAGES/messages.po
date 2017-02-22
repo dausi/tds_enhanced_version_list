@@ -1,0 +1,139 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tds_enhanced_version_list 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2017-02-21T15:29:37+01:00\n"
+"PO-Revision-Date: 2017-02-21 15:48+0100\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.12\n"
+
+#: packages/tds_enhanced_version_list/controller.php:28
+msgid "Enhanced Version List"
+msgstr "Erweiterte Liste der Versionen"
+
+#: packages/tds_enhanced_version_list/controller.php:32
+#: packages/tds_enhanced_version_list/controller.php:66
+msgid "List of all collection versions enhanced by table sorter and obsolete removal."
+msgstr "Liste der Versionen erweitert um Sortierfunktion und Löschen älterer Versionen"
+
+#: packages/tds_enhanced_version_list/controller.php:66
+msgid "Enhanced list of versions"
+msgstr "Erweiterte Liste der Versionen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:36
+msgid "Filter by page"
+msgstr "Anhand Seitennummer filtern"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:42
+msgid "Filter by user"
+msgstr "Anhand User-Kennung filtern"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:48
+msgid "Items per page"
+msgstr "Anzahl pro Seite"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:56
+msgid "Clear form"
+msgstr "Formular leeren"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:58
+msgid "Search"
+msgstr "Suchen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:62
+msgid "Scan obsolete"
+msgstr "Ältere Versionen suchen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:64
+msgid "Clear checked"
+msgstr "Markierungen löschen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:66
+msgid "Delete checked"
+msgstr "Markierte löschen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:85
+msgid "Page name"
+msgstr "Name der Seite"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:87
+msgid "cID"
+msgstr "cID"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:89
+msgid "Version"
+msgstr "Version"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:91
+msgid "Create date"
+msgstr "Anl.-Datum"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:93
+msgid "Public date"
+msgstr "Veröff.-Datum"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:95
+msgid "Author"
+msgstr "Autor"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:97
+msgid "Approver"
+msgstr "Genehmigt"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:99
+msgid "Comment"
+msgstr "Kommentar"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:102
+msgid "Hover to read full comment"
+msgstr "Mit Mauszeiger über Kommentar zum vollständigen Anzeigen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:135
+msgid "Approved"
+msgstr "Genehmigt"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:135
+msgid "Not approved"
+msgstr "Nicht genehmigt"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:164
+msgid "Remove obsolete versions"
+msgstr "Ältere Versionen löschen"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:165
+msgid "Do you really want to remove obsolete versions?"
+msgstr "Möchten Sie wirklich die älteren Versionen löschen?"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:167
+msgid "Make a backup of the database, if you are not sure what happens here."
+msgstr "Machen Sie eine Kopie der Datenbank, wenn Sie sich nicht sicher sind, was hier passiert."
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:168
+msgid "There's no chance to restore any removed version!"
+msgstr "Es gibt sonst keine Möglichkeit, gelöschte Versionen wieder herzustellen."
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:176
+msgid "Versions not found"
+msgstr "Keine Versionen gefunden."
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:248
+msgid "Deleting %d version(s) of collection %d..."
+msgstr "Lösche %d Version(en) der Collection %d..."
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:308
+msgid "You are going to deleting %d version(s) of %d collections."
+msgstr "Sie sind dabei, %d Version(en) von %d Collections zu löschen."
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:318
+msgid "Cancel"
+msgstr "Abbruch"
+
+#: packages/tds_enhanced_version_list/single_pages/dashboard/sitemap/tds_enhanced_version_list/view.php:324
+msgid "Remove"
+msgstr "Löschen"

@@ -1,0 +1,49 @@
+/* tables */
+table.tablesorter thead tr {
+	background-color: #ddd;
+}
+table.tablesorter thead tr b {
+	display: flex;
+}
+table.tablesorter thead tr .header {
+	cursor: pointer;
+}
+table.tablesorter thead tr i.fa
+{
+	display: none;
+}
+table.tablesorter thead tr .header i.fa
+{
+	float: right;
+	display: block;
+	padding: 2px 0 0 5px;
+}
+table.tablesorter thead tr .header i.fa-sort-asc,
+table.tablesorter thead tr .header i.fa-sort-desc
+{ /* fa-sort */
+	display: none;
+}
+table.tablesorter thead tr .headerSortUp.header i.fa-sort,
+table.tablesorter thead tr .headerSortUp.header i.fa-sort-asc
+{ /* fa-sort-desc */
+	display: none;
+}
+table.tablesorter thead tr .headerSortUp.header i.fa-sort-desc
+{ /* fa-sort-desc */
+	display: block;
+}
+table.tablesorter thead tr .headerSortDown.header i.fa-sort,
+table.tablesorter thead tr .headerSortDown.header i.fa-sort-desc
+{ /* fa-sort-asc */
+	display: none;
+}
+table.tablesorter thead tr .headerSortDown.header i.fa-sort-asc
+{ /* fa-sort-asc */
+	display: block;
+}
+
+table.tablesorter thead tr .headerSortDown,
+table.tablesorter thead tr .headerSortUp {
+	background-color: #3f9edc;
+	color: #fff;
+}
