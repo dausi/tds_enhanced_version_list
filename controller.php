@@ -37,9 +37,9 @@ class Controller extends Package {
     	$al = AssetList::getInstance();
     	$assets = [
 			's' => 'css/style.css',
-    		't' => 'css/jquery.tablesorter.css',
+    		't' => 'css/tablesorter/jquery.tablesorter.css',
     		'g' => 'js/enhanced_version_list.js',
-    		'j' => 'js/jquery.tablesorter.js',
+    		'j' => 'js/tablesorter/jquery.tablesorter.js',
     	];
     	$assetTypes = [
     		'c' => 'css',
