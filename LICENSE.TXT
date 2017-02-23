@@ -1,1 +1,9 @@
-This software is licensed under the terms described in the concrete5.org marketplace. Please find the add-on there for the latest license copy.
+This software is licensed under the terms described in the concrete5.org marketplace.
+
+Third party license conditions:
+===============================
+TableSorter 2.0 - Client-side table sorting with ease!
+Copyright (c) 2007 Christian Bach
+Dual licensed under the MIT and GPL licenses:
+http://www.opensource.org/licenses/mit-license.php
+http://www.gnu.org/licenses/gpl.html

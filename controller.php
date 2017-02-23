@@ -22,7 +22,7 @@ class Controller extends Package {
 
 	protected $pkgHandle = 'tds_enhanced_version_list';
 	protected $appVersionRequired = '5.7.5.9';
-	protected $pkgVersion = '0.1';
+	protected $pkgVersion = '0.9.0';
 
     public function getPackageName() {
 		return t('Enhanced Version List');
@@ -37,9 +37,9 @@ class Controller extends Package {
     	$al = AssetList::getInstance();
     	$assets = [
 			's' => 'css/style.css',
-    		't' => 'css/jquery.tablesorter.css',
+    		't' => 'css/tablesorter/jquery.tablesorter.css',
     		'g' => 'js/enhanced_version_list.js',
-    		'j' => 'js/jquery.tablesorter.js',
+    		'j' => 'js/tablesorter/jquery.tablesorter.js',
     	];
     	$assetTypes = [
     		'c' => 'css',
