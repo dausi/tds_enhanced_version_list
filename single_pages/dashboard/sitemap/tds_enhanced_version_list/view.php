@@ -176,7 +176,8 @@ else {
 	echo t('Versions not found');
 }
 
-$tokenParm = Loader::helper('validation/token')->getParameter('Concrete\Controller\Panel\Page\Versions');
+$tokenParm = Core::make('helper/validation/token')->getParameter('Concrete\Controller\Panel\Page\Versions');
+
 ?>
     </div>
 </div>
@@ -242,7 +243,7 @@ $tokenParm = Loader::helper('validation/token')->getParameter('Concrete\Controll
 				}
 				var cidx = 0;
 				var vDeleted = 0;
-				var url = '/ccm/system/panels/page/versions/delete?<?=$tokenParm?>';
+				var url = CCM_APPLICATION_URL + '/index.php/ccm/system/panels/page/versions/delete?<?=$tokenParm?>';
 
 				var sender = function() {
 					$('#progressbar').show();
