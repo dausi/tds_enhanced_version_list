@@ -1,4 +1,6 @@
 <?php
+use Zend\Http\Header\IfUnmodifiedSince;
+
 /**
  * Enhanced Version List
  * Author: Thomas Dausner (aka dausi)
@@ -104,7 +106,8 @@ if (count($items)) {
 							class="fa fa-sort-desc"></i></b></th>
 				</tr>
 			</thead>
-			<tbody><?php
+			<tbody>
+	<?php
 	foreach ($items as $item) {
 		/** @var \Concrete\Core\Page\Collection\Version\Version $item */
 		/** @var \Concrete\Core\Page\Page $page */
@@ -128,7 +131,9 @@ if (count($items)) {
 
 		$isApproved = $item->isApproved();
 
-		?>
+		if ($version != '')
+		{
+	?>
                 <tr
 					class="<?=$isApproved ? 'success' : 'unapproved'?>">
 					<td><input type="checkbox" /></td>
@@ -154,7 +159,8 @@ if (count($items)) {
 					<td class="cursor-help" title="<?=$comment?>"
 						data-toggle="tooltip" data-placement="left"><?=$text->shortenTextWord($comment, 30)?></td>
 				</tr>
-        	        <?php
+	<?php
+		}
 	}
 	?>
 			<tbody>
@@ -168,7 +174,7 @@ if (count($items)) {
 			<p><?=t('There\'s no chance to restore any removed version!')?></p>
 			<div id="progressbar"><div id="progress"><p></p></div></div>
 		</div>
-        <?php
+    <?php
 	/** @var Concrete\Package\TdsEnhancedVersionList\Src\TdsEnhancedVersionList\VersionList $versionList */
 	echo $versionList->getPagination()->renderView();
 }
