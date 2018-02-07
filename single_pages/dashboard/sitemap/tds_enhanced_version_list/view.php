@@ -33,19 +33,25 @@ $user_selector = \Core::make('helper/form/user_selector');
 			action="<?=URL::to('/dashboard/sitemap/tds_enhanced_version_list')?>"
 			method="get">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div class="form-group">
                         <?=$form->label('cID', t('Filter by page'))?>
                         <?=$page_selector->selectPage('cID')?>
                     </div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div class="form-group">
                         <?=$form->label('uID', t('Filter by user'))?>
                         <?=$user_selector->selectUser('uID')?>
                     </div>
 				</div>
-				<div class="col-md-4">
+			<div class="col-md-3">
+			    <div class="form-group">
+				<?=$form->checkbox('recentNotApproved', 1)?>
+				<?=$form->label('recentNotApproved', t('Filter recent, but not approved versions'))?>
+			    </div>
+                	</div>
+				<div class="col-md-3">
 					<div class="form-group">
                         <?=$form->label('itemPerPage', t('Items per page'))?>
                         <?=$form->number('itemPerPage', 20)?>
@@ -130,12 +136,24 @@ if (count($items)) {
 		$comment = $item->getVersionComments();
 
 		$isApproved = $item->isApproved();
+		
+		//If recent version, but NOT approved
+		$recentVersion = Concrete\Core\Page\Collection\Version\Version::get($page, 'RECENT');
+		$notApprovedRecent = !$isApproved && ($recentVersion->getVersionID() == $item->getVersionID());
+		
+		if ($isApproved) {
+		    $rowClass = 'success';
+		} else if ($notApprovedRecent) {
+		    $rowClass = 'danger';
+		} else {
+		    $rowClass = 'unapproved';
+		}
 
 		if ($version != '')
 		{
 	?>
                 <tr
-					class="<?=$isApproved ? 'success' : 'unapproved'?>">
+					class="<?=$rowClass?>">
 					<td><input type="checkbox" /></td>
 					<td class="data-approved" data-approved="<?=$isApproved?>"><?=$isApproved ? '<i class="fa fa-thumbs-up" title="'.t('Approved').'"></i>' : '<i class="fa fa-thumbs-o-down" title="'.t('Not approved').'"></i>'?></td>
 					<td><?=$pageName?> (<a href="<?=$pageURL?>"

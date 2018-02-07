@@ -32,6 +32,11 @@ class TdsEnhancedVersionList extends DashboardPageController  {
         //Filers
         $versionList->filterByPage(RequestBase::request('cID', 0));
         $versionList->filterByUser(RequestBase::request('uID', 0));
+        
+        //Filter new and NOT approved versions
+        if ($this->request('recentNotApproved')) {
+            $versionList->filterRecentNotApproved();
+        }
 
         $versionList->sortBy('cvDateCreated', 'DESC');
 
