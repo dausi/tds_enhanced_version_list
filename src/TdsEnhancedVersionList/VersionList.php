@@ -88,4 +88,13 @@ class VersionList extends DatabaseItemList {
             $this->query->setParameter('uID', $uID);
         }
     }
+    
+    /**
+     * Filter new and NOT approved versions
+     */
+    public function filterRecentNotApproved() {
+        $this->query->andWhere('cv.cvIsApproved = :cvIsApproved');
+        $this->query->andWhere('cv.cvID = (SELECT MAX(cv2.cvID) FROM CollectionVersions cv2 WHERE cv2.cID = cv.cID)');
+        $this->query->setParameter('cvIsApproved', 0);
+    }
 }
